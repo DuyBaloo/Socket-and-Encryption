@@ -3,6 +3,7 @@ package com.company;
 // A Java program for a Client
 import java.net.*;
 import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Client
@@ -64,8 +65,11 @@ public class Client
                 FileInputStream fis = new FileInputStream("HMAC.txt");
                 ObjectInputStream ois = new ObjectInputStream(fis);
                 byte[] fileHmac = (byte[]) ois.readObject();
+                System.out.print("HMAC from Client: " + Arrays.toString(fileHmac) + "\n");
                 byte[] passHMAC = HMAC.calcHmacSha256(encryptIn);
-                if(fileHmac == passHMAC)
+                System.out.print("HMAC from Server: " + Arrays.toString(passHMAC) + "\n");
+
+                if(Arrays.equals(fileHmac, passHMAC))
                 {
                     handler.decrypt(encryptIn);
                 }

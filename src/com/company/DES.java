@@ -48,10 +48,10 @@ public class DES {
 
             // Encrypt the text
             this.encryptedText = desCipher.doFinal(text);
-//            this.hmac = HMAC.calcHmacSha256(encryptedText);
-//            FileOutputStream hmacfos = new FileOutputStream("HMAC.txt");
-//            ObjectOutputStream hmacoos = new ObjectOutputStream(hmacfos);
-//            hmacoos.writeObject(hmac);
+            byte[] hmac = HMAC.calcHmacSha256(encryptedText);
+            FileOutputStream hmacfos = new FileOutputStream("HMAC.txt");
+            ObjectOutputStream hmacoos = new ObjectOutputStream(hmacfos);
+            hmacoos.writeObject(hmac);
             System.out.print("Key is: " + key + "\n");
             System.out.println("Text to send: " + input);
             //write code to display HMAC
