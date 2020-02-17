@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="94da9912-4dd6-4c87-8ff5-6a81af6d31af" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X5XDyOOq0NV96l3BkKeTQJMMN7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DES.java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Client" />
+      <module name="Socket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="Socket" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainB" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainB" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="p1.Server" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainB" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Client" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.MainB" />
+        <item itemvalue="Application.MainB" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94da9912-4dd6-4c87-8ff5-6a81af6d31af" name="Default Changelist" comment="" />
+      <created>1580336813212</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580336813212</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="88" key="#HTTP_Proxy" timestamp="1580442655212">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="88" key="#HTTP_Proxy/0.0.1536.824@0.0.1536.824" timestamp="1580442655211" />
+    <state x="113" y="75" key="#Main" timestamp="1580936647139">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="113" y="75" key="#Main/0.0.1536.824@0.0.1536.824" timestamp="1580936647139" />
+    <state x="109" y="75" key="#MainB" timestamp="1580935747993">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="109" y="75" key="#MainB/0.0.1536.824@0.0.1536.824" timestamp="1580935747993" />
+    <state x="109" y="75" key="#MainB_(1)" timestamp="1580935678615">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="109" y="75" key="#MainB_(1)/0.0.1536.824@0.0.1536.824" timestamp="1580935678615" />
+    <state x="113" y="75" key="#Main_" timestamp="1580936500723">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="109" y="75" key="#Main_(1)" timestamp="1580936472786">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="109" y="75" key="#Main_(1)/0.0.1536.824@0.0.1536.824" timestamp="1580936472786" />
+    <state x="113" y="75" key="#Main_/0.0.1536.824@0.0.1536.824" timestamp="1580936500723" />
+    <state x="722" y="72" key="#Project_Structure" timestamp="1580446761437">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1580446761437" />
+    <state x="485" y="72" key="#Server" timestamp="1581050757527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="72" key="#Server/0.0.1536.824@0.0.1536.824" timestamp="1581050757527" />
+    <state x="447" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580936495114">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1580936495114" />
+    <state x="498" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580502588519">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1580502588519" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1581723784729">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581723784729" />
+    <state x="933" y="155" key="FileChooserDialogImpl" timestamp="1580936818870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580936818870" />
+    <state width="1493" height="161" key="GridCell.Tab.0.bottom" timestamp="1581974193273">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581974193273" />
+    <state width="1493" height="161" key="GridCell.Tab.0.center" timestamp="1581974193272">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581974193272" />
+    <state width="1493" height="161" key="GridCell.Tab.0.left" timestamp="1581974193272">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581974193272" />
+    <state width="1493" height="161" key="GridCell.Tab.0.right" timestamp="1581974193272">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581974193272" />
+    <state width="723" height="260" key="GridCell.Tab.1.bottom" timestamp="1581145385832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581145385832" />
+    <state width="723" height="260" key="GridCell.Tab.1.center" timestamp="1581145385832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581145385832" />
+    <state width="723" height="260" key="GridCell.Tab.1.left" timestamp="1581145385832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581145385832" />
+    <state width="723" height="260" key="GridCell.Tab.1.right" timestamp="1581145385832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581145385832" />
+    <state x="277" y="56" key="SettingsEditor" timestamp="1580446576783">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580446576783" />
+    <state x="209" y="34" key="new project wizard" timestamp="1580937155160">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580937155160" />
+    <state x="475" y="42" key="refactoring.ChangeSignatureDialog" timestamp="1581719534938">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="42" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1581719534938" />
+    <state x="41" y="189" key="run.anything.popup" timestamp="1581909158121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="41" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1581909158121" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581718215695">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581718215695" />
+  </component>
+</project>
