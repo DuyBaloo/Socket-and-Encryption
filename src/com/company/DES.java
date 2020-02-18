@@ -57,7 +57,7 @@ public class DES {
             //write code to display HMAC
             System.out.println("Cipher : " + desCipher);
             System.out.print("Encrypted text : " + Arrays.toString(encryptedText) + "\n");
-
+            System.out.println("***********************************************************************************");
 
 
         } catch (NoSuchPaddingException | NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | InvalidKeyException | IOException e) {
@@ -92,6 +92,7 @@ public class DES {
                 System.out.print("Received text: " + Arrays.toString(input) + "\n");
                 System.out.println("Cipher : " + desCipher);
                 System.out.println("Text Decrypted : " + (res));
+                System.out.println("***********************************************************************************");
 
 
         } catch (NoSuchPaddingException | NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | InvalidKeyException | IOException | ClassNotFoundException e) {
