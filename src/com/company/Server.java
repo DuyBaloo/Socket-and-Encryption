@@ -51,36 +51,36 @@ public class Server
                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
                     byte[] buffer = new byte[1024];
                     baos.write(buffer, 0 , in.read(buffer));
+
                     encryptIn = baos.toByteArray();
-//                    line2 = handler.decrypt(encryptIn);
-
-                    FileInputStream fis = new FileInputStream("HMAC.txt");
-                    ObjectInputStream ois = new ObjectInputStream(fis);
-                    byte[] fileHmac = (byte[]) ois.readObject();
-                    System.out.print("HMAC from Server: " + Arrays.toString(fileHmac) + "\n");
-                    byte[] passHMAC = HMAC.calcHmacSha256(encryptIn);
-                    System.out.print("HMAC from Client: " + Arrays.toString(passHMAC) + "\n");
-
-                    if(Arrays.equals(fileHmac, passHMAC))
-                    {
-                        handler.decrypt(encryptIn);
-                    }
-                    else
-                    {
-                        System.out.println("HMAC does not match.");
-                    }
+                    System.out.println("debug received message" + Arrays.toString(encryptIn));
+                    handler.decrypt(encryptIn);
 
                     line = input.readLine();
                     encryptOut = handler.encrypt(line);
-                    HMAC.calcHmacSha256(encryptOut);
                     out.write(encryptOut);
+//                    FileInputStream fis = new FileInputStream("HMAC.txt");
+//                    ObjectInputStream ois = new ObjectInputStream(fis);
+//                    byte[] fileHmac = (byte[]) ois.readObject();
+//                    System.out.print("HMAC from Client: " + Arrays.toString(fileHmac) + "\n");
+//                    byte[] passHMAC = HMAC.calcHmacSha256(encryptIn);
+//                    System.out.print("HMAC from Server: " + Arrays.toString(passHMAC) + "\n");
+//
+//                    if(Arrays.equals(fileHmac, passHMAC))
+//                    {
+//                        handler.decrypt(encryptIn);
+//                    }
+//                    else
+//                    {
+//                        System.out.println("HMAC does not match.");
+//                    }
+
+
 
                 }
                 catch(IOException i)
                 {
                     System.out.println(i);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
                 }
             }
             System.out.println("Closing connection");

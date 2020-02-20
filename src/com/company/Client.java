@@ -51,9 +51,11 @@ public class Client
             {
                 DES handler = new DES();
 
+                assert input != null;
                 line = input.readLine();
                 encryptOut = handler.encrypt(line);
-                HMAC.calcHmacSha256(encryptOut);
+//                HMAC.calcHmacSha256(encryptOut);
+                assert out != null;
                 out.write(encryptOut);
 
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -61,28 +63,26 @@ public class Client
                 baos.write(buffer, 0 , in.read(buffer));
 
                 encryptIn = baos.toByteArray();
+
+                handler.decrypt(encryptIn);
 //                System.out.println(line2);
-                FileInputStream fis = new FileInputStream("HMAC.txt");
-                ObjectInputStream ois = new ObjectInputStream(fis);
-                byte[] fileHmac = (byte[]) ois.readObject();
-                System.out.print("HMAC from Client: " + Arrays.toString(fileHmac) + "\n");
-                byte[] passHMAC = HMAC.calcHmacSha256(encryptIn);
-                System.out.print("HMAC from Server: " + Arrays.toString(passHMAC) + "\n");
-
-                if(Arrays.equals(fileHmac, passHMAC))
-                {
-                    handler.decrypt(encryptIn);
-                }
-                else
-                {
-                    System.out.println("HMAC does not match.");
-                }
-
-//                line2 = handler.decrypt(encryptIn);
-//                System.out.println(line2);
-
+//                FileInputStream fis = new FileInputStream("HMAC.txt");
+//                ObjectInputStream ois = new ObjectInputStream(fis);
+//                byte[] fileHmac = (byte[]) ois.readObject();
+//                System.out.print("HMAC from Server: " + Arrays.toString(fileHmac) + "\n");
+//                byte[] passHMAC = HMAC.calcHmacSha256(encryptIn);
+//                System.out.print("HMAC from Client: " + Arrays.toString(passHMAC) + "\n");
+//
+//                if(Arrays.equals(fileHmac, passHMAC))
+//                {
+//                    handler.decrypt(encryptIn);
+//                }
+//                else
+//                {
+//                    System.out.println("HMAC does not match.");
+//                }
             }
-            catch(IOException | ClassNotFoundException i)
+            catch(IOException i)
             {
                 System.out.println(i);
             }
@@ -101,10 +101,10 @@ public class Client
         }
     }
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please input your ip: ");
-        String ip = scanner.nextLine();
-        Client client = new Client(ip, 5000);
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please input your ip: ");
+//        String ip = scanner.nextLine();
+        Client client = new Client("192.168.1.17" , 5000);
 
 
     }
