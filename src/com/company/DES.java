@@ -43,13 +43,11 @@ public class DES {
             desCipher.init(Cipher.ENCRYPT_MODE, key);
             //sensitive information
             byte[] text = input.getBytes();
-            System.out.println("debug: " + Arrays.toString(text));
             this.msgLength = text.length;
             FileOutputStream numos = new FileOutputStream("msgLength.txt");
 
             DataOutputStream dos = new DataOutputStream(numos);
             dos.writeInt(msgLength);
-            System.out.println("debug: " + msgLength);
             byte[] hmac = HMAC.calcHmacSha256(text);
             this.hmacLength = hmac.length;
             FileOutputStream numos1 = new FileOutputStream("hmacLength.txt");
@@ -71,9 +69,7 @@ public class DES {
 
                     // Encrypt the text
             this.encryptedText = desCipher.doFinal(joinHmac);
-//            FileOutputStream hmacfos = new FileOutputStream("HMAC.txt");
-//            ObjectOutputStream hmacoos = new ObjectOutputStream(hmacfos);
-//            hmacoos.writeObject(hmac);
+
             System.out.print("Key is: " + key + "\n");
             System.out.println("Text to send: " + input);
             System.out.println("Sent HMAC : " + Arrays.toString(joinHmac));
@@ -112,10 +108,8 @@ public class DES {
             byte[] receivedMsg = new byte[msgLength];
             byte[] receivedHmac = new byte[hmacLength];
             // Decrypt the text
-            System.out.println("debug msg length1: " + msgLength);
             this.decryptedText = desCipher.doFinal(input);
             byte[] passedByte = this.decryptedText;
-            System.out.println("debug msg length2: " + msgLength);
             for (int i = 0; i < msgLength; i++)
              {
                  receivedMsg[i] = passedByte[i];
@@ -133,22 +127,21 @@ public class DES {
                 System.out.println("Cipher : " + desCipher);
                 System.out.println("HMAC generated with received text: " + Arrays.toString(finalHMAC));
                 System.out.println("HMAC received: " + Arrays.toString(receivedHmac));
-
                 System.out.println("Text Decrypted : " + (res));
                 System.out.println("***********************************************************************************");
             }
             else
             {
                 System.out.println("HMAC does not match.");
-                System.out.println("msg received: " + Arrays.toString(receivedMsg));
-                System.out.println("decrypted whole: " + Arrays.toString(decryptedText));
-                System.out.println("decrypted passed: " + Arrays.toString(passedByte));
-                System.out.println("msg length: " + msgLength);
-                System.out.println("hmac length: " + hmacLength);
-
-
-                System.out.println("HMAC received: " + Arrays.toString(receivedHmac));
-                System.out.println("HMAC passed: " + Arrays.toString(finalHMAC));
+//                System.out.println("msg received: " + Arrays.toString(receivedMsg));
+//                System.out.println("decrypted whole: " + Arrays.toString(decryptedText));
+//                System.out.println("decrypted passed: " + Arrays.toString(passedByte));
+//                System.out.println("msg length: " + msgLength);
+//                System.out.println("hmac length: " + hmacLength);
+//
+//
+//                System.out.println("HMAC received: " + Arrays.toString(receivedHmac));
+//                System.out.println("HMAC passed: " + Arrays.toString(finalHMAC));
 
             }
 

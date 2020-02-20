@@ -40,7 +40,6 @@ public class Client
 
         // string to read message from input
         String line = "";
-        String line2;
         byte[] encryptOut;
         byte[] encryptIn;
 
@@ -54,7 +53,6 @@ public class Client
                 assert input != null;
                 line = input.readLine();
                 encryptOut = handler.encrypt(line);
-//                HMAC.calcHmacSha256(encryptOut);
                 assert out != null;
                 out.write(encryptOut);
 
@@ -65,22 +63,6 @@ public class Client
                 encryptIn = baos.toByteArray();
 
                 handler.decrypt(encryptIn);
-//                System.out.println(line2);
-//                FileInputStream fis = new FileInputStream("HMAC.txt");
-//                ObjectInputStream ois = new ObjectInputStream(fis);
-//                byte[] fileHmac = (byte[]) ois.readObject();
-//                System.out.print("HMAC from Server: " + Arrays.toString(fileHmac) + "\n");
-//                byte[] passHMAC = HMAC.calcHmacSha256(encryptIn);
-//                System.out.print("HMAC from Client: " + Arrays.toString(passHMAC) + "\n");
-//
-//                if(Arrays.equals(fileHmac, passHMAC))
-//                {
-//                    handler.decrypt(encryptIn);
-//                }
-//                else
-//                {
-//                    System.out.println("HMAC does not match.");
-//                }
             }
             catch(IOException i)
             {
@@ -104,7 +86,7 @@ public class Client
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Please input your ip: ");
 //        String ip = scanner.nextLine();
-        Client client = new Client("192.168.1.17" , 5000);
+        Client client = new Client("10.110.35.205" , 5000);
 
 
     }

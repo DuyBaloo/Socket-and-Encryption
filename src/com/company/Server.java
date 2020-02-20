@@ -59,24 +59,6 @@ public class Server
                     line = input.readLine();
                     encryptOut = handler.encrypt(line);
                     out.write(encryptOut);
-//                    FileInputStream fis = new FileInputStream("HMAC.txt");
-//                    ObjectInputStream ois = new ObjectInputStream(fis);
-//                    byte[] fileHmac = (byte[]) ois.readObject();
-//                    System.out.print("HMAC from Client: " + Arrays.toString(fileHmac) + "\n");
-//                    byte[] passHMAC = HMAC.calcHmacSha256(encryptIn);
-//                    System.out.print("HMAC from Server: " + Arrays.toString(passHMAC) + "\n");
-//
-//                    if(Arrays.equals(fileHmac, passHMAC))
-//                    {
-//                        handler.decrypt(encryptIn);
-//                    }
-//                    else
-//                    {
-//                        System.out.println("HMAC does not match.");
-//                    }
-
-
-
                 }
                 catch(IOException i)
                 {
