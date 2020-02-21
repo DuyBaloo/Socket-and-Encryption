@@ -83,10 +83,10 @@ public class Client
         }
     }
     public static void main(String[] args) throws IOException {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Please input your ip: ");
-//        String ip = scanner.nextLine();
-        Client client = new Client("10.110.35.205" , 5000);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please input your ip: ");
+        String ip = scanner.nextLine();
+        Client client = new Client(ip , 5000);
 
 
     }
